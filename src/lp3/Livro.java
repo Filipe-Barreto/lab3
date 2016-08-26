@@ -4,7 +4,7 @@ package lp3;
  *
  * @author Filipe
  */
-public class Livro {
+public class Livro implements Produto {
     
     private String titulo;
     private String autor;
@@ -24,10 +24,12 @@ public class Livro {
         this.preco = preco;
     }
 
+    @Override
     public String getTitulo() {
         return titulo;
     }
 
+    @Override
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
@@ -56,10 +58,12 @@ public class Livro {
         this.paginas = paginas;
     }
 
+    @Override
     public Double getPreco() {
         return preco;
     }
 
+    @Override
     public void setPreco(Double preco) {
         this.preco = preco;
     }

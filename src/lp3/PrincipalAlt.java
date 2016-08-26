@@ -11,26 +11,26 @@ public class PrincipalAlt {
     
     public static void main(String[] args) {
         
-        List<Livro> livros = new ArrayList<>();
+        List<Produto> produtos = new ArrayList<>();
         
-        livros.add(new Livro("Java para leigos", "S. Hawking", 2012, 100, 
+        produtos.add(new Livro("Java para leigos", "S. Hawking", 2012, 100, 
                 100.00));
         
-        livros.add(new Livro("Java para gênios", "S. Hawking", 2012, 1, 
+        produtos.add(new Livro("Java para gênios", "S. Hawking", 2012, 1, 
                 1000.00));
        
-        livros.add(new Livro("Java para pessoas medianas", "S. Hawking", 2012, 50, 
+        produtos.add(new Livro("Java para pessoas medianas", "S. Hawking", 2012, 50, 
                 200.00));
+
+        produtos.add(new CD("Exception","Bonde Java", 20.45));
         
-        System.out.println("Livros disponíveis");
+        System.out.println("Produtos disponíveis");
         
-        CD cd1 = new CD("Exception","Bonde Java", 20.45);
-        
-        //digite fore e aperte tab
-        for (Livro livro : livros) {
-            System.out.println(livro);
+//digite fore e aperte tab
+        for (Produto produto : produtos) {
+            System.out.println(produto);
         }
-        System.out.println(cd1);
+        
     }
       
 }

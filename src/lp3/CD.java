@@ -10,7 +10,7 @@ package lp3;
  *
  * @author Filipe
  */
-public class CD {
+public class CD implements Produto{
     private String titulo;
     private String banda;
     private Double preco;
@@ -24,10 +24,12 @@ public class CD {
         this.preco = preco;
     }
 
+    @Override
     public String getTitulo() {
         return titulo;
     }
 
+    @Override
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
@@ -40,10 +42,12 @@ public class CD {
         this.banda = banda;
     }
 
+    @Override
     public Double getPreco() {
         return preco;
     }
 
+    @Override
     public void setPreco(Double preco) {
         this.preco = preco;
     }
