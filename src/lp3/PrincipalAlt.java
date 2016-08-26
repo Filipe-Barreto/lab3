@@ -24,11 +24,13 @@ public class PrincipalAlt {
         
         System.out.println("Livros disponíveis");
         
+        CD cd1 = new CD("Exception","Bonde Java", 20.45);
+        
         //digite fore e aperte tab
         for (Livro livro : livros) {
             System.out.println(livro);
         }
-        
+        System.out.println(cd1);
     }
       
 }
